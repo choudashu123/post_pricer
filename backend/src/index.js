@@ -7,7 +7,8 @@ const app = express();
 // CORS configuration
 const allowedOrigins = [
   'http://localhost:3000', // For local development
-  'https://your-frontend-url.vercel.app', // For deployed frontend
+  'https://postpricer.vercel.app', // Custom domain
+  'https://postpricer-fpwolvbaz-ashutoshchoudharyjob-gmailcoms-projects.vercel.app', // Default 
 ];
 
 app.use(cors({
