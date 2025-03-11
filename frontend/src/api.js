@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://post-pricer.onrender.com';
+const API_BASE_URL = 'https://post-pricer.onrender.com/api';
 
 export const calculatePrice = async (data) => {
   try {

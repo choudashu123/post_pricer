@@ -40,3 +40,4 @@ dist/
 # Ignore OS-specific files
 .DS_Store
 >>>>>>> efe794098e55c8df3761ee5b1983a56489f66db7
+.vercel
