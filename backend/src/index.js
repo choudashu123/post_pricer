@@ -5,10 +5,15 @@ const pricingRouter = require('./routes/pricing');
 const app = express();
 
 // CORS configuration
+const allowedOrigins = [
+  'http://localhost:3000', // For local development
+  'https://your-frontend-url.vercel.app', // For deployed frontend
+];
+
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from frontend
-  methods: ['GET', 'POST'], // Allow only specific HTTP methods
-  credentials: true, // Allow cookies and credentials (if needed)
+  origin: allowedOrigins,
+  methods: ['GET', 'POST'],
+  credentials: true,
 }));
 
 // Middleware to parse JSON bodies
